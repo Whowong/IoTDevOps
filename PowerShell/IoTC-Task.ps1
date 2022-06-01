@@ -19,7 +19,6 @@ Param(
 az login --service-principal --username $AppId --password (ConvertFrom-SecureString -SecureString $ServicePrincipalPassword -AsPlainText)  --tenant $TenantId
 
 $Location = Get-Location
-$ConfigPath = "Configuration/Production/IoTC Configuration"
 $ConfigPath = "$Location/$ConfigPath"
 $Header = @{"authorization" = $ApiToken }
 $BaseUrl = "https://" + $AppName + ".azureiotcentral.com/api/"
