@@ -130,7 +130,7 @@ Function Build-Config{
     $JsonFile = @{}
     $JsonFile += $destinationsObject += $dataExportsObject += $devicegroupsObject += $fileUploadsObject += $jobsObject += $orgsObject += $rolesObject += $TokensObject
 
-    $JsonFile | ConvertTo-Json -Depth 10 | Set-Content "$ConfigPath/IoTC Configuration/IoTC-Config.json" -ErrorAction Stop
+    $JsonFile | ConvertTo-Json -Depth 100 | Set-Content "$ConfigPath/IoTC Configuration/IoTC-Config.json" -ErrorAction Stop
     Write-Host "Config file saved at $ConfigPath/IoTC-Config.json" -ForegroundColor DarkGray
     Write-Host "`nFinished`n`n`n`n`n" -ForegroundColor green
 
