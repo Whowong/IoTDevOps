@@ -9,7 +9,7 @@ Function Save-DeviceModels {
                 foreach ($element in $ModelObject.PSObject.Properties) {
                     if ($element.Name -eq "displayName") {
                         $DisplayName = $element.Value
-                        $ModelObject | ConvertTo-Json -Depth 10  | Set-Content "$ConfigPath/IoTC Configuration/Device Models/$DisplayName.json" -ErrorAction Stop
+                        $ModelObject | ConvertTo-Json -Depth 100  | Set-Content "$ConfigPath/IoTC Configuration/Device Models/$DisplayName.json" -ErrorAction Stop
                     }
                 }
             }
