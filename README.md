@@ -2,6 +2,8 @@
 
 > This repo contains sample code as part of a tutorial. The tutorial shows how to integrate IoT Central into an Azure DevOps pipeline for CI/CD.
 
+See the [Tutorial](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-integrate-with-devops) for the full instructions on how to use this sample code.
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
