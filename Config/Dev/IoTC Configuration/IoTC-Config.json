@@ -38,7 +38,12 @@
     "value": []
   },
   "device groups": {
-    "value": []
+    "value": [
+      {
+        "id": "63be882d-8689-4572-9c37-6842354268b9",
+        "displayName": "IoT Plug and Play mobile - All devices"
+      }
+    ]
   },
   "jobs": {
     "value": []
