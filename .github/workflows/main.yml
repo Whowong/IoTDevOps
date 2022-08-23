@@ -27,5 +27,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         shell: pwsh
-        run: .\PowerShell\IoTC-Task.ps1 -ConfigPath 'Config\Production\IoTC Configuration\' -AppName iotdemo-production -ApiToken "${{ secrets.CONN_STRING }}" -ServicePrincipalPassword "${{ secrets.SP_PASSWORD }}" -AppID "${{ secrets.APPID }}" -keyvault 'IOTC-KV-AHCSA-Prod' -TenantID "${{ secrets.SP_Tenant }}"
+        run: .\PowerShell\IoTC-Task.ps1 -ConfigPath 'Config\Production\IoTC Configuration\' -AppName iotdemo-production -ApiToken "${{ secrets.CONN_STRING }}" -ServicePrincipalPassword (ConvertTo-SecureString "${{ secrets.SP_PASSWORD }}" -AsPlainText -Force) -AppID "${{ secrets.APPID }}" -keyvault 'IOTC-KV-AHCSA-Prod' -TenantID "${{ secrets.SP_Tenant }}"
 
